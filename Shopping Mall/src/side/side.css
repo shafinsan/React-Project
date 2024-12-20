@@ -1,0 +1,32 @@
+.side{
+    left: 0;
+    top: 7.15rem;
+    position: absolute;
+    height: 100%;
+    width: 160px;
+    border-top: 2px solid rgba(169, 168, 168, 0.814);
+    padding: 2px;
+}
+.catagory{
+    margin-top: 10px;
+    width: 100%;
+    border: 2px solid rgb(224, 218, 218);
+}
+.price{
+    width: 100%;
+    margin-top: 10px;
+    border: 2px solid rgb(224, 218, 218);
+}
+.color{
+    width: 100%;
+    border: 2px solid rgb(224, 218, 218);
+    margin-top: 10px;
+}
+p{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    font-family: sans-serif;
+    font-weight: bold;
+}

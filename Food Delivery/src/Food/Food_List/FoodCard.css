@@ -1,0 +1,24 @@
+.Food_container {
+    max-width: 80vw;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .food_container_heading h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .card_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .card_container {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  }
+  

@@ -1,0 +1,26 @@
+.Container_side {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 226px;
+    height: 100%;
+    z-index: 2;
+    border-right: 2.5px solid rgb(226, 224, 224);
+}
+
+.Container_side h1 {
+    border-bottom: 2px solid rgb(226, 224, 224);
+    margin: 0;
+    width: 225px;
+    height: 3.75rem;
+    text-align: center;
+}
+
+.all_collection {
+    margin-top: 14px;
+    width: 225px;
+}
+
+label input {
+    font-family: sans-serif;
+}

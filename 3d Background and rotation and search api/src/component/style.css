@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: black;
+}
+
+.fromContainer {
+    position: fixed;
+    top: 25px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 400px;
+    height: 40px;
+    outline: none;
+    border-bottom-color: azure;
+    font-size: 1.1rem;
+    border-radius: 2px;
+    padding-left: 10px;
+    border-bottom-color: white;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    background-color: transparent;
+    color: white;
+    pointer-events: all;
+}
+
+.fa {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: calc(100% - 70px);
+    transform: translate(-50%, -50%);
+    font-size: 1.4rem;
+}
+
+.fa:active {
+    transform: translate(-50%, -50%) scale(0.97);
+}
+
+.positon_selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+}
+
+section {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transform: perspective(1000px) rotateY(0);
+}
+
+.Myrotation {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: rotateY(calc(var(--i)*45deg)) translateZ(400px);
+    transform-style: preserve-3d;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+}
+
+p {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    color: white;
+    font-family: sans-serif;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateZ(10px);
+    background-color: rgba(2, 2, 2, 0.752);
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    section {
+        width: 100px;
+        height: 100px;
+    }
+
+    .Myrotation {
+        width: 100px;
+        height: 100px;
+        transform: rotateY(calc(var(--i)*45deg)) translateZ(200px);
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+    }
+
+    p {
+        font-size: 0.7rem;
+    }
+}
+
+.button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80px;
+}
+
+button {
+    margin-top: 10px;
+    width: 95px;
+    height: 40px;
+    border: 2px solid white;
+    background-color: rgba(30, 27, 27, 0.914);
+    color: white;
+    font-family: sans-serif;
+    font-size: 1.1rem;
+    border-radius: 2px;
+    box-shadow: 0px 2px 7px rgb(42, 40, 40);
+}
+
+button:active {
+    scale: 0.97;
+}
+
+#options {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #f1f1f1;
+    color: #333;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+}
+
+/* Style for the options */
+#options option {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style for when the dropdown is open */
+#options:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #007bff;
+}

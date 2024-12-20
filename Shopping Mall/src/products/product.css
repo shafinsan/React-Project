@@ -1,0 +1,13 @@
+.product {
+    margin: 4rem 8rem 4rem 10rem;
+    width: calc(100vw - 10rem);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+    gap: 2rem;
+    border-left: 2px solid rgba(169, 168, 168, 0.814);
+    border-top: 2px solid rgba(169, 168, 168, 0.814);
+    box-shadow: 2px 2px 2px 0.2px rgba(169, 168, 168, 0.814);
+    background-color: rgba(244, 248, 248, 0.893);
+}
